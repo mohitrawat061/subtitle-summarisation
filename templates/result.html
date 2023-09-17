@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YT Video Summarizer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			html {
+				height: 100%;
+			}
+			body {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				min-height: 100%;
+				background: linear-gradient(to right, blue, purple);
+				background-size: 100%;
+			}
+			#summary {
+				text-align: justify;
+				color: white;
+				margin-top: 10%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			#original-text {
+				text-align: justify;
+				color: white;
+				margin-top: 5%;
+				margin-left: 10%;
+				margin-right: 10%;
+				background-color: rgba(0, 0, 0, 0.1);
+				border-radius: 15px;
+				padding: 20px;
+			}
+			#container {
+				text-align: center;
+				position: relative;
+			}
+			#download {
+				width: 200px;
+				height: 45px;
+				border-radius: 40px;
+				border-width: 0px;
+				background-color: rgba(255, 255, 255, 0.308);
+				margin-left: 10px;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="navbar">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/"
+							><span style="color: #ff0000; font-weight: bold"
+								>YT</span
+							>
+							Video Summarizer
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<h2 id="summary">{{result[0]}}</h2>
+		<hr
+			style="
+				color: white;
+				margin-left: 20%;
+				margin-right: 20%;
+				margin-top: 5%;
+			"
+		/>
+		<h2 id="original-text">{{result[1]}}</h2>
+	</body>
+</html>
